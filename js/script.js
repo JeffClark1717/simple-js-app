@@ -21,6 +21,10 @@ pokemon[2] = {
     type: ["grass", "poison"]
 };
 
-for (let i = 0; i < pokemon.length; i++) {
-  text += pokemon[i] + " ";
+
+let pokemonBig = "
+
+for (let i = 0; i < pokemonList.length; i++) {
+  if (pokemonList[i].height >= 6 && pokemonList[i].weight >= 60)
+document,write (pokemon.name + " is a Big " pokemon.type + "pokemon.")
 }
