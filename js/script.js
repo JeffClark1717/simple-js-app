@@ -27,8 +27,9 @@ for (let i = 0; i < pokemonList.length; i++){
     document.write(pokemonList[i].name + " " + "(height: " + pokemonList[i].height + "ft)" + " ");
     //conditional to check pokemon height
     if (pokemonList[i].height > 1.3){
-       document.write("- Big boy");
+       document.write("- Big boy.");
     } else {
-        document.write(" - Little guy")
+        document.write(" - Little guy.")
     }
+    document.write("<br>")
 };
