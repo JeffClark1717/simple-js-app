@@ -14,7 +14,7 @@ pokemon[1] = {
     type: ["fighting", "floating"]
 };
 
-pokemonList[2] = {
+pokemon[2] = {
     name: "Stunky",
     height: 1.1,
     weight: 9,
@@ -22,4 +22,6 @@ pokemonList[2] = {
 };
 
 console.log(pokemonList);
+
+document.write(pokemonList);
 
