@@ -1,4 +1,4 @@
-let pokemonList = [];
+const pokemonList = [];
 
 pokemonList[0] = {
     name: "Charizard",
@@ -24,5 +24,13 @@ pokemonList[2] = {
 console.log(pokemonList);
 
 for (let i = 0; i < pokemonList.length; i++){
-    document.write(pokemonList)
-}
+    document.write(pokemonList[i].name + " " + "(height: " + pokemonList[i].height + ")" + " ");
+    //conditional to check pokemon height
+    if (pokemonList[i].height > 1.3){
+       document.write("-Wow that's a big Pokemon");
+    } else {
+        document.write(" -Little Man!")
+    }
+    document.write("<br>")
+
+};
