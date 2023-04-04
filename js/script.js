@@ -25,7 +25,7 @@ console.log(pokemonList);
 
 for (let i = 0; i < pokemonList.length; i++){
     document.write(pokemonList[i].name + " " + "(height: " + pokemonList[i].height + "ft)" + " ");
-    if (pokemonList[i].height > 1.3){
+    if (pokemonList[i].height > 6){
        document.write("- Big boy.");
     } else {
         document.write(" - Little guy.")
