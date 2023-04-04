@@ -24,19 +24,10 @@ pokemonList[2] = {
 console.log(pokemonList);
 
 for (let i = 0; i < pokemonList.length; i++){
-   document.write(pokemonList[i].name + " " + pokemon.height + " " + pokemon.weight + " " + pokemon.type)
- if (pokemonList[i].height > 6){
-     document.write(pokemonList[i].name + " is a Big Boy")
- }
-    
-
-/* for (let i = 0; i < pokemonList.length; i++){
-   
-    //conditional to check pokemon height
+    document.write(pokemonList[i].name + " " + "(height: " + pokemonList[i].height + ")" + " ");
     if (pokemonList[i].height > 1.3){
        document.write("-Wow that's a big Pokemon");
     } else {
         document.write(" -Little Man!")
     }
-    document.write("<br>") */
     
