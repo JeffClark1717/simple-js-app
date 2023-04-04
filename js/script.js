@@ -1,4 +1,4 @@
-const pokemonList = []
+const pokemonList = [];
 
 pokemonList[0] = {
     name: "Charizard",
