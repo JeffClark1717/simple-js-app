@@ -23,5 +23,5 @@ pokemon[3] = {
 
 for (let i = 0; i < pokemonList.length; i++) {
   if (pokemonList[i].height >= 6 && pokemonList[i].weight >= 60)
-document,write (pokemon.name + " is a Big " pokemon.type + "pokemon.")
+document.write (pokemon.name + " is a Big " pokemon.type + "pokemon.")
 }
