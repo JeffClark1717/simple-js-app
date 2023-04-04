@@ -21,7 +21,19 @@ pokemon[2] = {
     type: ["grass", "poison"]
 };
 
-for (let i = 0; i < pokemonList.length; i++) {
-  if (pokemonList[i].height >= 6 && pokemonList[i].weight >= 60)
-document.write (pokemon.name + " is a Big " pokemon.type + "pokemon.")
+console.log(pokemonList);
+
+for (let i = 0; i < pokemonList.length; i++){
+   document.write(pokemonList[i].name + " " + "(height: " + pokemonList[i].height + ")" + " ");
 }
+
+/* for (let i = 0; i < pokemonList.length; i++){
+   
+    //conditional to check pokemon height
+    if (pokemonList[i].height > 1.3){
+       document.write("-Wow that's a big Pokemon");
+    } else {
+        document.write(" -Little Man!")
+    }
+    document.write("<br>") */
+    
