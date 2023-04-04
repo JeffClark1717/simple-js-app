@@ -21,7 +21,6 @@ pokemon[2] = {
     type: ["grass", "poison"]
 };
 
-console.log(pokemonList);
-
-document.write(pokemonList);
-
+for (let i = 0; i < pokemon.length; i++) {
+  text += pokemon[i] + " ";
+}
