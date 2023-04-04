@@ -1,20 +1,20 @@
 let pokemonList = [];
 
-pokemon[0] = {
+pokemon[1] = {
     name: "Charizard",
     height: 10,
     weight: 500,
     type: ["fire", "fighting"]
 };
 
-pokemon[1] = {
+pokemon[2] = {
     name: "Geodude",
     height: 3.2,
     weight: 75,
     type: ["fighting", "floating"]
 };
 
-pokemon[2] = {
+pokemon[3] = {
     name: "Stunky",
     height: 1.1,
     weight: 9,
