@@ -11,6 +11,7 @@ body{
     min-width: 360px;
     max-width: 700px;
     margin: 0 auto;
+    text-align: center;
 }
 
 head{
@@ -21,6 +22,7 @@ head{
     min-width: 360px;
     max-width: 700px;
     margin: 0 auto;
+    text-align: center;
 }
 
 img{
