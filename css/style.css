@@ -5,7 +5,7 @@ body{
     background-color: lightgray; 
 }
 
-h1{
+head{
     max-width: 500px;
     margin: auto;
     color: #000;
