@@ -3,16 +3,22 @@ body{
     padding: 50px;
     border-radius: 5px;
     background-color: lightgray; 
+    min-width: 360px;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 head{
-    max-width: 500px;
-    margin: auto;
     color: #000;
     padding: 50px;
     background-color: lightslategray;
+    min-width: 360px;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 img{
-    width: 200px;
+    min-width: 360px;
+    max-width: 700px;
+    margin: 0 auto;
 }
