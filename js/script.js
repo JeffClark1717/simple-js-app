@@ -20,6 +20,9 @@ for (let i = 0; i < pokemonList.length; i++){
 
 */
 
+(function () {
+    let data = {};
+
 let pokemonList = [
     {name: "Charizard", height: 10, weight: 500, type: ["fire", "fighting"]}, 
     {name: "Geodude", height: 3.2, weight: 75, type: ["fighting", "floating"]}, 
@@ -29,3 +32,5 @@ let pokemonList = [
 pokemonList.forEach(function(name) {
   console.log(name + " is " + height + " feet tall, " + weight + " pounds. And he is a " + type "." );
 });
+
+})();
