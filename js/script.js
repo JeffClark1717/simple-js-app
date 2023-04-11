@@ -1,27 +1,12 @@
-let pokemonList = [];
+/* let pokemonList = [];
 
-pokemonList[0] = {
-    name: "Charizard",
-    height: 10,
-    weight: 500,
-    type: ["fire", "fighting"]
-};
+const pokemonList = [
+    {name: "Charizard", height: 10, weight: 500, type: ["fire", "fighting"}, 
+    {name: "Geodude", height: 3.2, weight: 75, type: ["fighting", "floating"]}, 
+    {name: "Stunky", height: 1.1, weight: 9, type: ["grass", "poison"]}
+]
 
-pokemonList[1] = {
-    name: "Geodude",
-    height: 3.2,
-    weight: 75,
-    type: ["fighting", "floating"]
-};
-
-pokemonList[2] = {
-    name: "Stunky",
-    height: 1.1,
-    weight: 9,
-    type: ["grass", "poison"]
-};
-
-console.log(pokemonList);
+console.log(pokemonList); 
 
 for (let i = 0; i < pokemonList.length; i++){
     document.write(pokemonList[i].name + " " + "(height: " + pokemonList[i].height + "ft)" + " ");
@@ -32,3 +17,15 @@ for (let i = 0; i < pokemonList.length; i++){
     }
     document.write("<br>")
 };
+
+*/
+
+let pokemonList = [
+    {name: "Charizard", height: 10, weight: 500, type: ["fire", "fighting"]}, 
+    {name: "Geodude", height: 3.2, weight: 75, type: ["fighting", "floating"]}, 
+    {name: "Stunky", height: 1.1, weight: 9, type: ["grass", "poison"]}
+]
+
+pokemonList.forEach(function(name) {
+  console.log(name + " is " + height + " feet tall, " + weight + " pounds. And he is a " + type "." );
+});
