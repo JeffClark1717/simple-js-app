@@ -30,7 +30,7 @@ let pokemonList = [
 ]
 
 pokemonList.forEach(function(name) {
-  console.log(name + " is " + height + " feet tall, " + weight + " pounds. And he is a " + type "." );
+  document.write(name + " is " + height + " feet tall, " + weight + " pounds. And he is a " + type + "." );
 });
 
 })();
