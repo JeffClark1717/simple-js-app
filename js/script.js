@@ -31,6 +31,8 @@ let pokemonList = [
     {name: "Stunky", height: 1.1, weight: 9, type: ["grass", "poison"]}
 ]
 
+console.log(pokemonList); 
+
 pokemonList.forEach(function(name) {
   document.write(name + " is " + height + " feet tall, " + weight + " pounds. And he is a " + type + "." );
 });
