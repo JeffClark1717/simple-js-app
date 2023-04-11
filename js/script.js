@@ -20,6 +20,8 @@ for (let i = 0; i < pokemonList.length; i++){
 
 */
 
+let pokemonList = [];
+
 (function () {
     let data = {};
 
