@@ -37,5 +37,5 @@ for (let i = 0; i < pokemonList.length; i++){
 */
 
 pokemonRepository.forEach(function(pokemon) {
-    console.log(pokemonList.name + " is " + pokemonList.height + " feet tall, and weighs " + pokemonList.weight + ", and is a " + pokemonList.type + " sign.")
+    document.write(pokemonList.name + " is " + pokemonList.height + " feet tall, and weighs " + pokemonList.weight + ", and is a " + pokemonList.type + " sign.")
 })
