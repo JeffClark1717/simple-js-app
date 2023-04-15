@@ -24,6 +24,13 @@ return {
 
 console.log(pokemonRepository.getAll())
 
+pokemonRepository.getAll().forEach(function(pokemon) {
+    document.write(pokemon.name + " is " + pokemon.height + " feet tall, and weighs " + pokemon.weight + ", and is a " + pokemon.type + " sign.  ")
+})
+
+
+
+
 /*
 for (let i = 0; i < pokemonList.length; i++){
     document.write(pokemonList[i].name + " " + "(height: " + pokemonList[i].height + "ft)" + " ");
@@ -36,6 +43,4 @@ for (let i = 0; i < pokemonList.length; i++){
 } 
 */
 
-pokemonRepository.forEach(function(pokemon) {
-    document.write(pokemonList.name + " is " + pokemonList.height + " feet tall, and weighs " + pokemonList.weight + ", and is a " + pokemonList.type + " sign.")
-})
+
