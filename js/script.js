@@ -7,40 +7,47 @@ let pokemonList = [
     {name: "Stunky", height: 1.1, weight: 9, type: ["grass", "poison"]}
 ];
 
-function add (pokemon){
-    pokemonList(pokemon)
+function add(pokemon) {
+      pokemonList.push(pokemon);
 }
 
 function getAll () {
     return pokemonList;
+    };
+
+    function showDetails(pokemon) {
+        console.log(pokemon.name)
+    }
+
+function addListItem(pokemon) {
+    let ul = document.querySelector('.pokemon-list');
+    let listItem = document.createElement('li');
+    let button = document.createElement('button');
+    button.innerText = (pokemon.name);
+    button.classList.add('pokebutton');
+    listItem.appendChild(button);
+    ul.appendChild(listItem);
+
+    button.addEventListener('click', function (event) {
+        showDetails(pokemon);
+    });
 }
 
 return {
+    add: add,
     getAll: getAll,
-    add: add
+    addListItem: addListItem
 }
 
 })()
 
+console.log(pokemonRepository.getAll());
+pokemonRepository.add({name: "Pikachu", height:"0.2", type: ["electicity"] });
+
 console.log(pokemonRepository.getAll())
 
 pokemonRepository.getAll().forEach(function(pokemon) {
-    document.write(pokemon.name + " is " + pokemon.height + " feet tall, and weighs " + pokemon.weight + ", and is a " + pokemon.type + " sign.  ")
-})
-
-
-
-
-/*
-for (let i = 0; i < pokemonList.length; i++){
-    document.write(pokemonList[i].name + " " + "(height: " + pokemonList[i].height + "ft)" + " ");
-    if (pokemonList[i].height > 6){
-       document.write("- He's a big boy.");
-    } else {
-        document.write(" - He's a cute little fella.")
-    }
-    document.write("<br>")
-} 
-*/
-
-
+    pokemonRepository.addListItem(pokemon);
+   
+})   
+    
