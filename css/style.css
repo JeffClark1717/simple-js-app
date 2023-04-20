@@ -35,6 +35,7 @@ h1{
 }
 
 button{
+    background-color: yellow;
     color:green;
     padding-left: 20px;
     padding-right: 20px;
