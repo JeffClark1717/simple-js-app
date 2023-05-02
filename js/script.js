@@ -80,11 +80,7 @@ let pokemonRepository = (function () {
         pokemonHeight.innerText = 'Height : ' + (pokemon.height/10) + ' ft';
     
         modal.style.display = 'block';
-    
-        closeButton.addEventListener('click', function() {
-            modal.style.display = 'none';
-        });
-
+ 
         document.addEventListener('keydown', function(event) {
             if (event.key === 'Escape') {
                 modal.style.display = 'none';
@@ -94,26 +90,12 @@ let pokemonRepository = (function () {
         closeButton.addEventListener('click', function() {
             modal.style.display = 'none';
         });
-    
+
         modal.addEventListener('click', function(event) {
             if (event.target === modal) {
                 modal.style.display = 'none';
             }
         });
-
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                modal.style.display = 'none';
-            }
-        });
-    
-        modal.addEventListener('click', function(event) {
-            if (event.target === modal || event.target === closeButton) {
-                modal.style.display = 'none';
-            }
-        });
-
-
     }
     
     return {
